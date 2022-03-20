@@ -12,6 +12,14 @@ long_des:["Display inventory on home page",
 "Change quantity of items in cart",
 "View Total"
 ]
+},   {name: "Portfolio website",des:"A <b>React</b> Portfolio website",
+link:"https://divinegordon.github.io/portfolio/",
+img:{alt:"React Portfolio Website",src:"portfolio/portfolio_preview.jpg"},
+build:["Babel","webpack"],
+front:["React"],
+long_des:["A portfolio website using <b>React</b>",
+"Filter through projects by category"
+]
 },
 {img:{src:"news_reader.JPG", alt:"react redux new reader"},
 des:"This project—a news reader in which users can view and comment on various articles",
@@ -37,6 +45,27 @@ link:"https://realgordon.github.io/Jammming/"
     img: {src:"memory_match_game.JPG", alt:"React-Redux Matching Game"},
     front:["React","Redux"]
 }
+],
+Python:[
+  {
+    link:"https://caaka-website.ue.r.appspot.com/",
+    name:"Company Website (Caak-a Consultancy)",
+    des:"A company landing page",
+   
+    lang:["Python"],
+   
+    img:{alt:"",src:"caaka-website.gif"}
+  }
+],
+'Frontend':[
+  {
+    link:  "https://projectpayapi.netlify.app/starter-code/index.html",
+    name:"Multipage Responsive website",
+        des: "A multipage website which is responsive for desktop, mobile,and tablet."
+        +'This website is the implementation of a design specification',
+       img: {src:"payapi/payapi.jpg", alt:"PayAPI preview image"},
+      
+  }
 ]
 
 

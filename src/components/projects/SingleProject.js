@@ -3,7 +3,17 @@ const data={'react-redux':{
   Frontend:["HTML","CSS","Javascript"],
   Build:["webpack","Babel"],
  
-}}
+} ,
+Python:{
+  Frontend:["HTML","CSS","Javascript"],
+  "APIs/Cloud Services":["Google Cloud App Engine","Google Cloud Functions",
+  "Google Cloud Firestore(Firebase)"],
+  Backend:["Flask (python webframework)"],
+},
+Frontend:{
+  Frontend:["HTML","CSS","Javascript"]
+}
+}
 export const SingleProject=(props)=>{
   const {setView,category}=props;
   let {link ,img ,name ,des,long_des} = props.data;
