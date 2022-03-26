@@ -3,8 +3,34 @@
 import { SingleProject } from '../components/projects/SingleProject.js';
 import { ProjectCard } from '../components/projects/ProjectCard.js';
 import data from '../data.js';
-const useState = React.useState;
 
+var useState = React.useState,
+useEffect=React.useEffect;
+
+function sortData(){
+  var sortedData={},categories=['react-redux','Frontend','Python','Backend'];
+  categories.forEach(v=>{
+    sortedData[v]=[];
+  })
+  data.forEach((v)=>{
+    if(v.tools.some(v=>v==='React')){
+      
+      sortedData['react-redux'].push(v)
+    }
+    if(v.tools.some(v=>v==='Front')){
+      sortedData['Frontend'].push(v)
+
+    }
+    if(v.tools.some(v=>v==='Python')){
+      sortedData['Python'].push(v)
+
+    }
+    if(v.tools.some(v=>v==='Backend')){
+      sortedData['Backend'].push(v)
+    }
+  })
+  return sortedData;
+}
 
 const SelectButton = (props) => {
   const {category}=props;
@@ -50,6 +76,14 @@ const App = () => {
   const [view, setView] = useState("home");
   const [category, setCategory] = useState("react-redux");
   const [singleProject, setSingleProject] = useState({ name: "", category: "" });
+  const [data,setData]=useState(null);
+  useEffect(()=>{
+    
+    setData(sortData())
+  },[])
+  if (!data){
+    return <h1>Loading...</h1>
+  }
   let content;
   const categories = Object.keys(data);
   if (view === "home") {
@@ -64,8 +98,9 @@ const App = () => {
   }
   else if (view === "single_project") {
     const { category, name } = singleProject;
+    const chosen_project={...(data[category].find(v => v.name === name))};
     content = <SingleProject category={category}
-      data={data[category].find(v => v.name === name)} setView={setView} />;
+      data={chosen_project} setView={setView} />;
   }
   return (
     <>
