@@ -35,14 +35,16 @@ long_des:["A portfolio website using React",
   "View search results",
  "View pet pages by animal type",  
  ],
- front:["React","React Router"] ,type:'web' ,tools:['React','Front']
+ front:["React","React Router"] ,type:'web' ,
+ tools:['React','Front']
 
 },
 {img:{src:"news_reader.JPG", alt:"react redux new reader"},
 des:"This project—a news reader in which users can view and comment on various articles",
 link:"https://realgordon.github.io/redux-news-reader/",
 name:"Articles Blog",
-front:["React","Redux"],type:'web',tools:['React','Redux','Front']
+front:["React","Redux"],type:'web',
+tools:['React','Redux','Front']
 },
 {  name:"Spotify Jammming App",img:{src:"jammming.JPG",
  alt:"Spotify playlist creator"},
@@ -52,14 +54,16 @@ front:["React","Redux"],type:'web',tools:['React','Redux','Front']
   "Create a playlist",
   "Add songs to playlist and save to Spotify account"
   ],front:["React"],
-link:"https://realgordon.github.io/Jammming/",type:'web',tools:['React','Front']
+link:"https://realgordon.github.io/Jammming/",
+type:'web',tools:['React','Front']
 },
 {Git:'https://github.com/DivineGordon/redux-react-matching-memory',
   link:  "https://divinegordon.github.io/redux-react-matching-memory/",
  name:"Memory Matching Game",
      des: "A card matching Game",
     img: {src:"memory_match_game.JPG", alt:"React-Redux Matching Game"},
-    front:["React","Redux"],type:'web',tools:['React','Redux']
+    front:["React","Redux"],type:'web',
+    tools:['React','Redux']
 },
   {
     link:"https://caaka-website.ue.r.appspot.com/",
@@ -68,7 +72,8 @@ link:"https://realgordon.github.io/Jammming/",type:'web',tools:['React','Front']
    type:'web',
     lang:["Python"],
    
-    img:{alt:"",src:"caaka-website.gif"},tools:['Python','Front']
+    img:{alt:"",src:"caaka-website.gif"},
+    tools:['Python','Front']
   },
   {Git:'https://github.com/RealGordon/project-payapi',
     link:  "https://projectpayapi.netlify.app/starter-code/index.html",
@@ -86,6 +91,27 @@ link:"https://realgordon.github.io/Jammming/",type:'web',tools:['React','Front']
     img: {src:"quote-api/index.jpg", alt:"quote-api preview image"},
     type:'web',tools:['Front','Backend']
   }
+,
+{
+  Git:'https://github.com/DivineGordon/syncline-book-store',
+  //link:"https://realgordon.github.io/adopt-a-pet/",
+  name:"Book store",
+  img: {src:"petstore/petstore_preview.JPG", alt:"pet store preview image"},
+  des:'Book store multipage website',
+  long_des:[
+    "Home page",
+    "Search for a book by name",
+  "View search results",
+  "See all orders by user",
+   "Admin Board",
+   "Admin page to Add books to the database",
+   "Admin page to Change book properties",
+   "Admin page to see all book orders"
+ ],
+ front:["React","React Router","Vue","Redux"] ,
+ type:'web' ,tools:[
+  'React','Backend','Mongo Db','Express.js','Front']
 
+}
 
 ]
