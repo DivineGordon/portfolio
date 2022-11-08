@@ -99,18 +99,19 @@ type:'web',tools:['React','Front']
   img: {src:"petstore/petstore_preview.JPG", alt:"pet store preview image"},
   des:'Book store multipage website',
   long_des:[
-    "Home page",
-    "Search for a book by name",
-  "View search results",
-  "See all orders by user",
+    "Customer board - Home page",
+    "Customer page - Search for a book by name and view results",
+"Customer page - view cart and product order quantities",
+  "Customer page- See all orders by user",
    "Admin Board",
-   "Admin page to Add books to the database",
-   "Admin page to Change book properties",
-   "Admin page to see all book orders"
+   "Admin page - Add books to the database",
+   "Admin page - Change book properties ( stock quantity, price, picture, description, etc)",
+   "Admin page - see all book orders",
+   "Create Admin user with Node.js command line script "
  ],
  front:["React","React Router","Vue","Redux"] ,
- type:'web' ,tools:[
-  'React','Backend','Mongo Db','Express.js','Front']
+ type:'web' ,tools:['React','MERN','Vue',
+ 'Backend','Front']
 
 }
 

@@ -8,7 +8,14 @@ const data = {
     "APIs/Cloud Services": ["Google Cloud App Engine", "Google Cloud Functions",
       "Google Cloud Firestore(Firebase)"],
     Backend: ["Flask (python webframework)"],
+  },Vue:{
+    Build:['Vite']
   },
+  MERN:{
+    Frontend:['React','Redux','React router'],
+    Build: ["webpack", "Babel"],
+   Backend:['Mongo db','Express.js','Node.js']
+  }
 }
 
 const goBack = () => { goBack.setView("home") };
